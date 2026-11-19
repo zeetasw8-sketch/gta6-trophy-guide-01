@@ -35,3 +35,5 @@ writeFileSync(
   buildDossier(out, { text_max_bytes: 163840, screenshots: { max: 4, max_bytes: 262144 }, app_max_files: 993, app_max_bytes: 50331648 }),
 );
 console.log('wrote', out, '— app/ + screenshots/ + dossier.json');
+const { statSync } = await import('node:fs');
+console.log('dossier.json:', statSync(join(out, 'dossier.json')).size, 'bytes');

@@ -192,7 +192,7 @@ function cardFor(t, spoilerOn) {
   const cb = document.createElement('input');
   cb.type = 'checkbox';
   cb.checked = isEarned;
-  cb.setAttribute('aria-label', 'Mark ' + t.name + ' as earned');
+  cb.setAttribute('aria-label', 'Mark ' + (masked ? 'hidden story trophy' : t.name) + ' as earned');
   cb.addEventListener('change', () => {
     if (cb.checked) earned.add(t.id); else earned.delete(t.id);
     saveEarned();

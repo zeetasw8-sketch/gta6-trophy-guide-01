@@ -35,6 +35,10 @@ mkdir -p out && MAKEFUN_OUTPUT_DIR=out node main.ts
 
 Screenshots in `screenshots/` are real screens of the app running (1280×800): the checklist, the Platinum roadmap, a trophy guide panel, and the Silver filter view.
 
+## Verified (rebuild, 20 Nov 2026)
+
+Playwright Chromium headless: 55 cards render, 0 external requests, 0 console/page errors. Spoiler OFF reveals "Just Like Paradise"; search "vault" returns 1 result (Maximum Withdrawal); export downloads `gta6-trophy-progress.json` and import restores it; 3 missable cards, 7 source links, 4 roadmap phases. `makefun check` run from the level-27 kit before submission.
+
 ## Data & sources
 
 Trophy names, descriptions, grades and hidden flags are the official PlayStation 5 list as published 18 November 2026 (Exophase / PSNProfiles). Methods and counts were drawn from the sources listed in the app's Sources & Notes tab (Planet GTA 6, Output Lag, Push Square, KeenGamer, TrueAchievements) and are cited per trophy. All guide text is this project's own words — nothing copies another guide's text.
