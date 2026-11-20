@@ -1,6 +1,8 @@
 # Leonida Trophy Atlas — GTA VI Trophy Guide & Tracker
 
-[![make.fun bounty](https://img.shields.io/badge/make.fun-gta6--trophy--guide--01-5b2a6e)](https://make.fun/c/gta6-trophy-guide-01)
+[![make.fun · gta6-trophy-guide-01](https://make.fun/badge/gta6-trophy-guide-01.svg)](https://make.fun/bounty/gta6-trophy-guide-01?utm_source=github&utm_medium=readme&utm_campaign=gta6-trophy-guide-01)
+[![rank](https://make.fun/badge/gta6-trophy-guide-01/zeetasw8-sketch/gta6-trophy-guide-01/rank.svg)](https://make.fun/bounty/gta6-trophy-guide-01/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=gta6-trophy-guide-01)
+[![reward](https://make.fun/badge/gta6-trophy-guide-01/zeetasw8-sketch/gta6-trophy-guide-01/reward.svg)](https://make.fun/bounty/gta6-trophy-guide-01?utm_source=github&utm_medium=readme&utm_campaign=gta6-trophy-guide-01)
 
 An offline guide and checklist tracker for all **55 Grand Theft Auto VI trophies** on
 PlayStation 5: 1 Platinum, 2 Gold, 6 Silver, 46 Bronze — 28 of them hidden on
