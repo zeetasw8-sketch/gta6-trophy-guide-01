@@ -3,23 +3,115 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>GTA VI trophy checklist</title>
+<title>Vice City Trophy Atlas — GTA VI 55-trophy guide &amp; tracker</title>
+<meta name="description" content="Offline guide and tracker for all 55 PlayStation 5 trophies of Grand Theft Auto VI: cited guides, platinum roadmap, missable audit, spoiler-safe checklist.">
 <link rel="stylesheet" href="style.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230b1020'/%3E%3Ctext x='16' y='22' font-size='17' text-anchor='middle' fill='%23ffb703' font-family='Arial' font-weight='bold'%3EV%3C/text%3E%3C/svg%3E">
 </head>
 <body>
-<header>
-  <h1>GTA VI trophy checklist</h1>
-  <p id="progress">0 of 55 earned</p>
+<header class="hero">
+  <div class="hero-text">
+    <p class="kicker">GRAND THEFT AUTO VI &middot; PLAYSTATION 5 &middot; OFFLINE GUIDE</p>
+    <h1>Vice City Trophy Atlas</h1>
+    <p class="sub">All 55 trophies, every guide cited, one road to the Platinum.</p>
+  </div>
+  <div class="dash" id="dash" aria-label="Progress dashboard">
+    <div class="dash-big"><span id="dash-earned">0</span><span class="dash-of">/ 55</span></div>
+    <div class="dash-bar"><div id="dash-fill"></div></div>
+    <p class="dash-pct"><strong id="dash-pct">0%</strong> to Platinum</p>
+    <p class="dash-line">Est. time left: <strong id="dash-hours">&asymp;204 h</strong></p>
+    <p class="dash-line" id="dash-grades">Left — Platinum 1 &middot; Gold 2 &middot; Silver 6 &middot; Bronze 46</p>
+    <p class="dash-line dash-risk">At risk: <strong id="dash-risk">1 possibly missable</strong> &middot; 7 to watch</p>
+  </div>
 </header>
-<div class="controls">
-  <label>Grade <select id="grade"><option value="all">All</option><option value="platinum">Platinum</option><option value="gold">Gold</option><option value="silver">Silver</option><option value="bronze">Bronze</option></select></label>
-  <button id="export" type="button">Export progress</button>
-  <label class="import">Import progress <input id="import" type="file" accept="application/json"></label>
-</div>
-<table>
-  <thead><tr><th>Earned</th><th>Trophy</th><th>Grade</th><th>How to get it</th></tr></thead>
-  <tbody id="rows"></tbody>
-</table>
+
+<nav class="views" aria-label="Sections">
+  <button type="button" data-view="checklist" class="active">Checklist</button>
+  <button type="button" data-view="roadmap">Platinum roadmap</button>
+  <button type="button" data-view="missable">Missable audit</button>
+  <button type="button" data-view="sources">Sources &amp; notes</button>
+</nav>
+
+<section id="view-checklist" class="view active">
+  <div class="controls" role="search">
+    <label class="search">Search <input id="q" type="search" placeholder="name, mission, place… e.g. vault" autocomplete="off"></label>
+    <label>Grade <select id="grade"><option value="all">All grades</option><option value="platinum">Platinum</option><option value="gold">Gold</option><option value="silver">Silver</option><option value="bronze">Bronze</option></select></label>
+    <label>Kind <select id="kind"><option value="all">All kinds</option><option value="story">Story</option><option value="strangers">Strangers &amp; side</option><option value="activities">Activities</option><option value="robbery">Robbery &amp; crime</option><option value="collection">Collection</option><option value="world">World &amp; moments</option><option value="platinum">Platinum &amp; 100%</option></select></label>
+    <label>Status <select id="status"><option value="all">All</option><option value="earned">Earned</option><option value="remaining">Remaining</option></select></label>
+    <label class="check"><input id="missable-only" type="checkbox"> Missable / watch only</label>
+    <label class="check spoiler"><input id="spoiler" type="checkbox" checked> <span id="spoiler-label">Spoiler protection ON</span></label>
+    <span class="spacer"></span>
+    <button id="export" type="button">Export progress</button>
+    <label class="import">Import <input id="import" type="file" accept="application/json,.json"></label>
+    <button id="reset" type="button">Reset</button>
+  </div>
+  <p id="count" class="count" aria-live="polite">55 trophies</p>
+  <div class="split">
+    <div id="list" class="list" aria-label="Trophy list"></div>
+    <aside id="panel" class="panel" aria-label="Trophy guide">
+      <div id="panel-body"><p class="panel-hint">Pick a trophy on the left to read its guide, sources, difficulty and time.</p></div>
+    </aside>
+  </div>
+</section>
+
+<section id="view-roadmap" class="view">
+  <h2>Roadmap to the Platinum</h2>
+  <p class="lede">PowerPyx rates the hunt 4/10 difficulty and about 200 hours in a single playthrough, with no online trophies and no New Game+. The story takes 60–80 hours; the 100% checklist takes about 100 more; clean-up takes 10–20. This atlas follows that shape.</p>
+  <ol class="phases">
+    <li class="phase">
+      <h3>Phase 0 — Before you start <span class="phase-hours">30 minutes of discipline</span></h3>
+      <p><strong>Save manually at the start and end of every chapter.</strong> There is no mission replay, so a manual save is your only way back (PowerPyx). <strong>Never turn cheats on</strong> — cheats disable trophies and saving (PowerPyx). Avoid the Irredeemable criminal profile: it is permanent and makes police far more aggressive (GTASpotter).</p>
+      <p class="phase-covers">Covers: the save habit that protects every trophy below.</p>
+    </li>
+    <li class="phase">
+      <h3>Phase 1 — Play the story, do the one missable thing <span class="phase-hours">60–80 h</span></h3>
+      <p>Finish all five chapters and the six named missions. While you play, scan vehicles and places with the WAiNK app, try all nine activity types, and work the stranger strands as they appear. <strong>In Chapter 1, after the mission Down to Earth, take Lucia's balcony meditation at Jason's house</strong> — the one possibly missable trophy (PowerPyx, KeenGamer). Andy's strand is Lucia-only; Tyrone's and Bret's are Jason-only (GTASpotter).</p>
+      <p class="phase-covers">Covers: 12 story trophies, the 5 named stranger finales, Positive Mental Attitude.</p>
+    </li>
+    <li class="phase">
+      <h3>Phase 2 — The 100% checklist <span class="phase-hours">&asymp;100 h</span></h3>
+      <p>After the final mission, open Progress &gt; Stats &gt; 100% Completion (PowerPyx). The checklist is lenient — roughly 60% of true completion — needing 70 of 80 challenges, 15 of 18 card sets, 200 of 277 vehicles scanned and 100 of 255 animals studied. It still demands every robbery, underwater discovery, shooting range, drone race and Bret quest in full. Work it top to bottom; free roam continues after the story (PushSquare).</p>
+      <p class="phase-covers">Covers: A Long Road, 250 stunts, 42 gold shooting-range medals, 14 drone races, 100 WAiNK locations, 5 bank vaults, 9 gangs, 52 areas, 8 garages.</p>
+    </li>
+    <li class="phase">
+      <h3>Phase 3 — Strangers, leftovers, Platinum <span class="phase-hours">10–20 h</span></h3>
+      <p>Finish any stranger strands left, sweep the remaining activities and robberies, and launder the last marked bills. Every quest-giver tied to a trophy comes back after the story (GTASpotter), so nothing here is a race. When the last counter falls, Vice Got a Price! pops.</p>
+      <p class="phase-covers">Covers: Strangers &amp; Freaks, the last challenges, Vice Got a Price!</p>
+    </li>
+  </ol>
+</section>
+
+<section id="view-missable" class="view">
+  <h2>Missable audit — what the published guides actually say</h2>
+  <p class="lede">Audited against every one of the 55 official descriptions and the published guides. The honest result: <strong>one</strong> trophy is flagged as possibly missable, and seven more deserve a watch. Everything else is obtainable in a single playthrough — free roam continues after the final mission (PushSquare) and every quest-giver tied to a trophy returns (GTASpotter).</p>
+  <div id="missable-list" class="missable-list"></div>
+  <h3>Save discipline (the real protection)</h3>
+  <ul class="notes">
+    <li><strong>No mission replay.</strong> Save manually at the start and end of every chapter (PowerPyx).</li>
+    <li><strong>Cheats disable trophies and saving</strong> (PowerPyx) — do not touch them until the Platinum pops.</li>
+    <li><strong>Irredeemable profile is permanent</strong> — avoid it; police become far more aggressive (GTASpotter).</li>
+    <li><strong>Hourglass quests expire</strong>, but they do not count for trophies (GTASpotter) — let them go without worry.</li>
+    <li><strong>Character-locked strands:</strong> Andy is Lucia-only; Tyrone and Bret are Jason-only (GTASpotter).</li>
+  </ul>
+</section>
+
+<section id="view-sources" class="view">
+  <h2>Sources &amp; notes</h2>
+  <p class="lede">Every guide in this atlas names its sources beside it. Nothing here is copied from another guide — the words are this atlas's own, and the facts are cited to the guides that published them.</p>
+  <div id="source-list" class="source-list"></div>
+  <h3>Notes on the list</h3>
+  <ul class="notes">
+    <li><strong>Official list:</strong> the 55 names, descriptions and grades are as PlayStation publishes them; Exophase and PSNProfiles agree on all 55. Frozen 18 Nov 2026. One name carries asterisks as published: “T**s Ass Drug Money”.</li>
+    <li><strong>Hidden trophies:</strong> 28 of the 55 are hidden on PlayStation until earned — the 12 story trophies, the 5 stranger finales, and 11 world and moment trophies. Spoiler protection hides exactly those 28 until you earn them or switch it off.</li>
+    <li><strong>Unconfirmed methods:</strong> Personal Best, Actions Speak Louder, Bad Luck, I Guess, The Truth Is Out There and Ten Pin have no confirmed unlock method in any published guide yet. This atlas says so plainly instead of inventing steps — check the sources again as the community pins them down.</li>
+    <li><strong>Estimates are estimates:</strong> difficulty stars and hours are this atlas's own judgement, benchmarked against PowerPyx (~200 h, 4/10) and PushSquare (up to 300+ h). Your mileage will vary.</li>
+    <li><strong>Counts:</strong> 250 stunts of 397 in the game, 42 shooting-range challenges, 14 drone-race locations, 18 meditation spots, 18 card sets, 80 challenges in 8 groups of 10, 52 areas, 9 gangs, 8 garages, 277 base-model vehicles, 255 animals.</li>
+  </ul>
+</section>
+
+<footer>
+  <p>Vice City Trophy Atlas — an unofficial, offline fan guide. Grand Theft Auto VI and all related marks belong to their owners; no Rockstar logo or artwork is used here. Trophy names and descriptions are shown as PlayStation publishes them. Built from the official 55-trophy list, frozen 18 Nov 2026.</p>
+</footer>
 <script type="module" src="app.js"></script>
 </body>
 </html>
